@@ -1,0 +1,10 @@
+node_modules/
+dist/
+flyway/
+webdriver/
+.idea/
+local-config.js
+client.crt
+client.key
+client.pk8
+logs/

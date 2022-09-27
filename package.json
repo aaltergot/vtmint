@@ -1,0 +1,28 @@
+{
+  "name": "vtmint",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+
+    "eth-gen-wallet": "cross-env NODE_OPTIONS=\"-r ts-node/register\" node src/scripts/eth/eth-gen-wallet.ts",
+    "eth-gen-wallets": "cross-env NODE_OPTIONS=\"-r ts-node/register\" node src/scripts/eth/eth-gen-wallets.ts",
+    "eth-transfer-eth": "cross-env NODE_OPTIONS=\"-r ts-node/register\" node src/scripts/eth/eth-transfer-eth.ts",
+    "eth-transfer-eth-windows": "cross-env NODE_OPTIONS=\"-r ts-node/register --openssl-legacy-provider\" node src/scripts/eth/eth-transfer-eth.ts",
+    "eth-get-balance": "cross-env NODE_OPTIONS=\"-r ts-node/register\" node src/scripts/eth/eth-get-balance.ts",
+    "eth-mint": "cross-env NODE_OPTIONS=\"-r ts-node/register --inspect\" node src/scripts/eth/eth-mint.ts"
+
+  },
+  "dependencies": {
+    "comedy": "^2.1.5",
+    "cross-env": "^7.0.3",
+    "node-fetch": "^2.6.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4",
+    "user-agents": "^1.0.971",
+    "jszip": "^3.7.1",
+    "ethers": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.10"
+  }
+}

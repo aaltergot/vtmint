@@ -137,7 +137,10 @@ async function main() {
   const ethContractGasWatchActorProps: EthContractGasWatchActorProps = {
     parentName: scriptName,
     contractAddress: mintParams.contractAddress,
-    contractMethodIds: ['devMint(uint256 quantity)', 'mint(uint32 address, uint32 quantity)'],
+    // contractMethodIds: ['devMint(uint256 quantity)', 'mint(uint32 address, uint32 quantity)'],
+    contractMethodIds: ['devMint(uint256)', 'mint(uint32,uint32)',
+                       'multicall(uint256,bytes[])' //for test
+                      ],
     providerParams: mintParams.providerParams,
     timeoutMillis: 100
   }
